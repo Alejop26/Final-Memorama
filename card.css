@@ -202,7 +202,7 @@ main {
 
 .flip-card {
   position: relative;
-  color: linear-gradient(blue, pink);
+  background: linear-gradient(blue, purple);
   width: 150px;
   height: 150px;
   border-radius: 5px;
@@ -219,16 +219,10 @@ main {
   height: 100%;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    36deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(37, 37, 37, 1) 0%,
-    rgba(14, 14, 14, 1) 100%
-  );
-  border: 5px solid #fff;
-  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
-    -5px 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(blue, purple);
+  background: linear-gradient(blue, purple);
+  border: 5px linear-gradient(blue, purple);
+  background: linear-gradient(blue, purple);
 }
 
 .flip-card-back,
@@ -1143,15 +1137,19 @@ main {
 }
 
 .warning {
-  background-color: #FDF7DF;
-  border: 1px solid #FEEC6F;
-  color: #C9971C;
+  background: black;
+  border: linear-gradient(blue, purple);
+  color: white;
+  align-items: center;
+  ;
 }
 
 .error {
-  background-color: #FEE;
-  border: 1px solid #EDD;
-  color: #A66;
+  background-color: black;
+  border: linear-gradient(blue, purple);
+  color: white;
+  align-items: center;
+  
 }
 
 .you-won-card {
@@ -1165,16 +1163,15 @@ main {
   justify-content: center;
   width: 300px;
   height: 300px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2),
-    0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: linear-gradient(blue, purple);
   z-index: 20;
 }
 
 .label-dice {
   animation: changeOrder 6s infinite linear;
-  background: #ddd;
+  background: white;
   cursor: pointer;
   display: block;
   padding: 1rem;
@@ -1184,6 +1181,9 @@ main {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 
 .you-won-card h1 {
@@ -1195,16 +1195,15 @@ main {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
-  background-color: #f5f5f5;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.2),
-    0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: linear-gradient(blue, purple);
+  box-shadow: linear-gradient(blue, purple);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .you-won-card a {
   text-decoration: none;
-  color: #000;
+  color: linear-gradient(blue, purple);
 }
 
 /* responsive */
@@ -1215,7 +1214,7 @@ main {
     height: 100px;
   }
   .flip-card-inner {
-    border: 3px solid #fff;
+    border: linear-gradient(blue, purple);
   }
   .flip-card-back img,
   .flip-card-front img {
@@ -1242,7 +1241,7 @@ main {
     height: 80px;
   }
   .flip-card-inner {
-    border: 2px solid #fff;
+    border: linear-gradient(blue, purple);
   }
   .flip-card-back img,
   .flip-card-front img {
